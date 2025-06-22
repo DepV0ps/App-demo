@@ -9,14 +9,15 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ./app-demo
+        working-directory: ./app-demo}
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Install Dependecies
         run: |
-          pip3 Install -r requirements.txt
+          pip3 install -r requirements.txt
 
       - name: Run tests
         run: |
